@@ -206,12 +206,7 @@ kubectl get svc -w
 ## Verify JupterHub Notebook
 * Navigate Browser...
 ```
-http://<JUPYTERHUB-EXTERNAL-IP>:8080
-```
-
-* Change Interpreter's Spark Master URL (Upper right, Drop-down, Interpreter)
-```
-Change value to spark://<SPARK-MASTER-EXTERNAL-IP>:7077
+http://<JUPYTERHUB-EXTERNAL-IP>:8754
 ```
 
 * Run Example Notebooks!
