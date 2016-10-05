@@ -172,3 +172,46 @@ Change value to spark://<SPARK-MASTER-EXTERNAL-IP>:7077
 ```
 
 * Run Example Notebooks!
+
+## Deploy JupyterHub (ReplicationController + Pod)
+```
+git clone https://github.com/fluxcapacitor/jupyterhub.ml.git
+```
+```
+kubectl create -f jupyterhub.ml/jupyterhub-rc.yaml
+```
+
+* Verify JupyterHub
+```
+kubectl get rc
+
+kubectl get pod
+```
+
+* Check Logs of JupyterHub
+```
+kubectl logs -f <POD-NAME>
+
+kubectl describe <POD-NAME>
+```
+
+## Deploy JupyterHub (LoadBalancer + Service)
+```
+kubectl create -f jupyterhub.ml/jupyterhub-svc.yaml
+```
+```
+kubectl get svc -w
+```
+
+## Verify JupterHub Notebook
+* Navigate Browser...
+```
+http://<JUPYTERHUB-EXTERNAL-IP>:8080
+```
+
+* Change Interpreter's Spark Master URL (Upper right, Drop-down, Interpreter)
+```
+Change value to spark://<SPARK-MASTER-EXTERNAL-IP>:7077
+```
+
+* Run Example Notebooks!
