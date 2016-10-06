@@ -124,6 +124,11 @@ kubectl scale --replicas=4 rc worker-spark-2-0-1
 https://<KUBERNETES-CLUSTER-IP>/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard/#/workload
 ```
 
+## Auto-scale Spark Worker using CPU
+```
+kubectl autoscale rc worker-spark-2-0-1 --max=4 --cpu-percent=25
+```
+
 ## Perform Rolling Update of Spark Worker (ie. Larger Worker Memory)
 * Perform the Rolling Update
 ```
