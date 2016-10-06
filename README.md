@@ -129,7 +129,12 @@ https://<KUBERNETES-CLUSTER-IP>/api/v1/proxy/namespaces/kube-system/services/kub
 
 ## Auto-scale Spark Worker using CPU
 ```
-kubectl autoscale rc worker-spark-2-0-1 --max=4 --cpu-percent=25
+kubectl autoscale rc worker-spark-2-0-1 --max=4 --cpu-percent=1
+```
+
+## Verify Auto-scaling
+```
+spark-submit --class org.apache.spark.examples.SparkPi --master spark://spark.datasticks.com:7077 --num-executors 500 --executor-memory 2g --total-executor-cores 2 $SPARK_HOME/examples/jars/spark-examples*.jar 5000
 ```
 
 ## Perform Rolling Update of Spark Worker (ie. Larger Worker Memory)
