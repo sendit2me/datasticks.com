@@ -1,4 +1,5 @@
-Datasticks - The Lightweight, Open Source Alternative for Data Processing and Machine Learning
+# Datasticks:  The Lightweight, Open Source Alternative for Advanced Analytics and Machine Learning
+![Datasticks Logo](https://s3-us-west-2.amazonaws.com/advancedspark.com/img/datasticks-logo.png)
 
 ## Download Docker for Mac or Windows
 ```
