@@ -178,11 +178,6 @@ kubectl get svc -w
 http://<ZEPPELIN-EXTERNAL-IP>:3123
 ```
 
-* Change Interpreter's Spark Master URL (Upper right, Drop-down, Interpreter)
-```
-Change value to spark://<SPARK-MASTER-EXTERNAL-IP>:7077
-```
-
 * Run Example Notebooks!
 
 ## Deploy JupyterHub (ReplicationController + Pod)
