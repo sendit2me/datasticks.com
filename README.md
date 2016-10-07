@@ -116,6 +116,19 @@ kubectl describe pod <POD-NAME>
 kubectl logs -f <POD-NAME>
 ```
 
+## Deploy Spark Worker (LoadBalancer + Service)
+```
+kubectl create -f worker.ml/spark/2.0.1/worker-spark-svc.yaml
+```
+```
+kubectl get svc -w
+```
+
+## Verify Spark Worker through Browser
+```
+http://<SPARK-WORKER-EXTERNAL-IP>:6061
+```
+
 ## Scale Spark Worker through Command Line
 ```
 kubectl scale --replicas=4 rc worker-spark-2-0-1
