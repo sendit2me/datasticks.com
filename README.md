@@ -230,3 +230,39 @@ http://<JUPYTERHUB-EXTERNAL-IP>:8754
 ```
 
 * Run Example Notebooks!
+
+## Deploy Apache (ReplicationController + Pod)
+```
+git clone https://github.com/fluxcapacitor/apache.ml.git
+```
+```
+kubectl create -f apache.ml/apache-rc.yaml
+```
+
+* Verify Apache
+```
+kubectl get rc
+
+kubectl get pod
+```
+
+* Check Logs of Apache
+```
+kubectl logs -f <POD-NAME>
+
+kubectl describe <POD-NAME>
+```
+
+## Deploy Apache (LoadBalancer + Service)
+```
+kubectl create -f apache.ml/apache-svc.yaml
+```
+```
+kubectl get svc -w
+```
+
+## Verify JupterHub Notebook
+* Navigate Browser...
+```
+http://<JUPYTERHUB-EXTERNAL-IP>:8754
+```
