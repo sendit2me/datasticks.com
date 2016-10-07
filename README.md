@@ -175,7 +175,7 @@ kubectl get svc -w
 ## Verify Zeppelin Notebook
 * Navigate Browser...
 ```
-http://<ZEPPELIN-EXTERNAL-IP>:8080
+http://<ZEPPELIN-EXTERNAL-IP>:3123
 ```
 
 * Change Interpreter's Spark Master URL (Upper right, Drop-down, Interpreter)
