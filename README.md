@@ -17,6 +17,10 @@ git clone https://github.com/fluxcapacitor/dashboard.ml.git
 ```
 kubectl create -f dashboard.ml/weavescope/weavescope.yaml
 ```
+* Find the LoadBalancer Host/IP
+```
+kubectl describe svc weavescope-app
+```
 
 ## Deploy Spark Master (ReplicationController + Pod)
 * Create Spark Master
@@ -47,6 +51,10 @@ kubectl create -f master.ml/spark/2.0.1/master-spark-svc.yaml
 ```
 ```
 kubectl get svc -w
+```
+* Find the LoadBalancer Host/IP
+```
+kubectl describe svc master-spark
 ```
 
 ## Verify Spark Master through Browser
@@ -91,6 +99,10 @@ kubectl create -f worker.ml/spark/2.0.1/worker-spark-svc.yaml
 ```
 ```
 kubectl get svc -w
+```
+* Find the LoadBalancer Host/IP
+```
+kubectl describe svc worker-spark
 ```
 
 ## Verify Spark Worker through Browser
@@ -153,11 +165,15 @@ kubectl create -f zeppelin.ml/zeppelin-svc.yaml
 ```
 kubectl get svc -w
 ```
+* Find the LoadBalancer Host/IP
+```
+kubectl describe svc zeppelin-master
+```
 
 ## Verify Zeppelin Notebook
 * Navigate Browser...
 ```
-http://<ZEPPELIN-EXTERNAL-IP>:3123
+http://<ZEPPELIN-EXTERNAL-HOST-OR-IP>:3123
 ```
 
 * Run Example Notebooks!
@@ -191,11 +207,15 @@ kubectl create -f jupyterhub.ml/jupyterhub-svc.yaml
 ```
 kubectl get svc -w
 ```
+* Find the LoadBalancer Host/IP
+```
+kubectl describe svc juptyerhub-master
+```
 
 ## Verify JupterHub Notebook
 * Navigate Browser...
 ```
-http://<JUPYTERHUB-EXTERNAL-IP>:8754
+http://<JUPYTERHUB-EXTERNAL-HOST-OR-IP>:8754
 ```
 
 * Run Example Notebooks!
@@ -229,9 +249,13 @@ kubectl create -f apache.ml/apache-svc.yaml
 ```
 kubectl get svc -w
 ```
+* Find the LoadBalancer Host/IP
+```
+kubectl describe svc apache
+```
 
-## Verify JupterHub Notebook
+## Verify Apache
 * Navigate Browser...
 ```
-http://<JUPYTERHUB-EXTERNAL-IP>:8754
+http://<APACHE-EXTERNAL-IP>
 ```
