@@ -2,51 +2,15 @@
 
 ### The Lightweight, 100% Open Source Alternative for Advanced Analytics and Machine Learning
 
-## Download Docker for Mac or Windows
+## Setup Kubernetes Client
+* Follow the instructions [here](https://github.com/fluxcapacitor/kubernetes.ml).
+
+## Deploy Weave Scope 
 ```
-https://www.docker.com/products/docker
+git clone https://github.com/fluxcapacitor/dashboard.ml.git
 ```
-
-## Setup Kubernetes Cluster on Google, AWS, Azure, or On-Premise
-
-## Start and Shell into Docker Container with Kubernetes CLI Installed
-* **KUBERNETES_SERVER**:  Host/IP of Kubernetes Cluster
-* **KUBERNETES_USERNAME**:  Admin Username of Kubernetes Cluster
-* **KUBERNETES_PASSWORD**:  Admin Password of Kubernetes Cluster
-* **KUBERNETES_NAMESPACE**:  Your Unique Namespace ID (ie. your username)
 ```
-docker run -it --name=kubernetes --privileged --net=host -e KUBERNETES_SERVER=<KUBERNETES_SERVER> -e KUBERNETES_USERNAME=admin -e KUBERNETES_PASSWORD=<KUBERNETES_PASSWORD> -e KUBERNETES_NAMESPACE=<KUBERNETES_NAMESPACE> fluxcapacitor/kubernetes bash
-```
-
-## Set User-Specific Context and Namespace
-```
-kubectl config set-credentials user --username=$KUBERNETES_USERNAME --password=$KUBERNETES_PASSWORD
-
-kubectl config set-cluster cluster --insecure-skip-tls-verify=true --server=https://$KUBERNETES_SERVER
-
-kubectl create namespace $KUBERNETES_NAMESPACE
-
-kubectl config set-context $KUBERNETES_NAMESPACE --user=user --namespace=$KUBERNETES_NAMESPACE --cluster=cluster
-
-kubectl config use-context $KUBERNETES_NAMESPACE
-
-kubectl config current-context
-```
-
-## Explore Kubernetes Cluster
-```
-kubectl get nodes
-
-kubectl cluster-info
-
-kubectl get pod
-
-kubectl get svc
-```
-
-## Explore Kubernetes Dashboard
-```
-https://<KUBERNETES-CLUSTER-IP>/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard/#/workload
+kubectl create -f dashboard.ml/weavescope/weavescope.yaml
 ```
 
 ## Deploy Spark Master (ReplicationController + Pod)
