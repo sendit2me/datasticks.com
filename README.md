@@ -2,6 +2,11 @@
 
 ### The Lightweight, 100% Open Source Alternative for Advanced Analytics and Machine Learning
 
+## Live Demo
+* Click [here](http://datasticks.com) for a live, non-secure demo.  
+
+**Note:  Do not load any sensitive data into this environment!**
+
 ## Setup Kubernetes Client
 * Follow the instructions [here](https://github.com/fluxcapacitor/kubernetes.ml).
 
