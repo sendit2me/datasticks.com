@@ -214,9 +214,6 @@ kubectl describe <POD-NAME>
 
 ### Deploy Apache (LoadBalancer + Service)
 ```
-kubectl create -f zeppelin.ml/apache-svc.yaml
-```
-```
 kubectl create -f apache.ml/apache-svc.yaml
 ```
 ```
