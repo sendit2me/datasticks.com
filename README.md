@@ -13,9 +13,6 @@
 ## Kuberentes Admin
 ### Deploy Kubernetes Admin UI (Weave Scope)
 ```
-git clone https://github.com/fluxcapacitor/dashboard.ml.git
-```
-```
 kubectl create -f dashboard.ml/weavescope/weavescope.yaml
 ```
 * Find the LoadBalancer Host/IP
@@ -24,10 +21,6 @@ kubectl describe svc weavescope-app
 ```
 ## Spark Master
 ### Deploy Spark Master (ReplicationController + Pod)
-* Create Spark Master
-```
-git clone https://github.com/fluxcapacitor/master.ml.git
-```
 ```
 kubectl create -f master.ml/spark/2.0.1/master-spark-rc.yaml
 ```
@@ -69,11 +62,6 @@ kubectl exec master-spark-<pod-name> -it -- bash -il
 
 ## Spark Worker
 ### Deploy Spark Worker (ReplicationController + Pod)
-* Clone the latest `worker.ml` repo
-```
-git clone https://github.com/fluxcapacitor/worker.ml.git
-```
-* Create Spark Worker
 ```
 kubectl create -f worker.ml/spark/2.0.1/worker-spark-rc.yaml
 ```
@@ -136,9 +124,6 @@ spark-submit --class org.apache.spark.examples.SparkPi --master spark://spark.da
 ## Zeppelin Notebook
 ### Deploy Zeppelin (ReplicationController + Pod)
 ```
-git clone https://github.com/fluxcapacitor/zeppelin.ml.git
-```
-```
 kubectl create -f zeppelin.ml/zeppelin-rc.yaml
 ```
 * Verify Zeppelin
@@ -166,8 +151,7 @@ kubectl get svc -w
 kubectl describe svc zeppelin-master
 ```
 
-### Verify Zeppelin Notebook
-* Navigate Browser...
+### Verify Zeppelin Notebook through Browser
 ```
 http://<ZEPPELIN-EXTERNAL-HOST-OR-IP>:3123
 ```
@@ -204,7 +188,6 @@ kubectl describe svc juptyerhub-master
 ```
 
 ### Verify JupterHub Notebook through Browser
-* Navigate Browser...
 ```
 http://<JUPYTERHUB-EXTERNAL-HOST-OR-IP>:8754
 ```
@@ -245,7 +228,6 @@ kubectl describe svc apache
 ```
 
 ### Verify Apache through Browser
-* Navigate Browser...
 ```
 http://<APACHE-EXTERNAL-IP>
 ```
@@ -313,9 +295,8 @@ kubectl describe svc airflow
 ```
 
 ### Verify Airflow through Browser
-* Navigate Browser...
 ```
-http://<AIRFLOW-EXTERNAL-IP>
+http://<AIRFLOW-EXTERNAL-IP>:8080
 ```
 
 
@@ -378,6 +359,36 @@ kubectl get svc -w
 * Find the LoadBalancer Host/IP
 ```
 kubectl describe svc kafka
+```
+
+## Dynomite-Redis Cache
+### Deploy Dynomite-Redis (ReplicationController + Pod)
+```
+kubectl create -f dynomite.ml/dynomite-rc.yaml
+```
+* Verify Dynomite-Redis
+```
+kubectl get rc
+
+kubectl get pod
+```
+* Check Logs of Prediction Serving
+```
+kubectl logs -f <POD-NAME>
+
+kubectl describe <POD-NAME>
+```
+
+### Deploy Dynomite-Redis (LoadBalancer + Service)
+```
+kubectl create -f dynomite.ml/dynomite-svc.yaml
+```
+```
+kubectl get svc -w
+```
+* Find the LoadBalancer Host/IP
+```
+kubectl describe svc dynomite
 ```
 
 
