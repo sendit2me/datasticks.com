@@ -13,5 +13,15 @@
 ## Setup Kubernetes Client CLI
 * Follow the instructions [here](https://github.com/fluxcapacitor/kubernetes.ml#install-kubernetes-client).
 
+## Deploy to Kubernetes Cluster
+```
+./deploy.sh
+```
+
+## Get Host/IP for Apache2 Httpd
+```
+kubectl get svc -w
+```
+
 ## Support
 * Email **help@fluxcapacitor.com** for Support!
