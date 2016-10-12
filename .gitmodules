@@ -1,0 +1,39 @@
+[submodule "dashboard.ml"]
+	path = dashboard.ml
+	url = https://github.com/fluxcapacitor/dashboard.ml.git
+[submodule "master.ml"]
+	path = master.ml
+	url = https://github.com/fluxcapacitor/master.ml.git
+[submodule "worker.ml"]
+	path = worker.ml
+	url = https://github.com/fluxcapacitor/worker.ml.git
+[submodule "zeppelin.ml"]
+	path = zeppelin.ml
+	url = https://github.com/fluxcapacitor/zeppelin.ml.git
+[submodule "jupyterhub.ml"]
+	path = jupyterhub.ml
+	url = https://github.com/fluxcapacitor/jupyterhub.ml.git
+[submodule "apache.ml"]
+	path = apache.ml
+	url = https://github.com/fluxcapacitor/apache.ml.git
+[submodule "scheduler.ml"]
+	path = scheduler.ml
+	url = https://github.com/fluxcapacitor/scheduler.ml.git
+[submodule "zookeeper.ml"]
+	path = zookeeper.ml
+	url = https://github.com/fluxcapacitor/zookeeper.ml.git
+[submodule "stream.ml"]
+	path = stream.ml
+	url = https://github.com/fluxcapacitor/stream.ml.git
+[submodule "sql.ml"]
+	path = sql.ml
+	url = https://github.com/fluxcapacitor/sql.ml.git
+[submodule "serve.ml"]
+	path = serve.ml
+	url = https://github.com/fluxcapacitor/serve.ml.git
+[submodule "dynomite.ml"]
+	path = dynomite.ml
+	url = https://github.com/fluxcapacitor/dynomite.ml.git
+[submodule "demos.ml"]
+	path = demos.ml
+	url = https://github.com/fluxcapacitor/demos.ml
