@@ -48,5 +48,3 @@ kubectl create -f serve.ml/jvm-svc.yaml
 echo '...Prediction Serving Layer (TensorFlow-based)...'
 kubectl create -f serve.ml/tensorflow-rc.yaml
 kubectl create -f serve.ml/tensorflow-svc.yaml
-
-
