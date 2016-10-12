@@ -8,4 +8,10 @@
 **Note:  Do not load any sensitive data into this environment!**
 
 ## Setup Kubernetes Cluster
-* Follow the instructions [here](https://github.com/fluxcapacitor/kubernetes.ml).
+* Follow the instructions [here](https://github.com/fluxcapacitor/kubernetes.ml#setup-a-new-kubernetes-cluster).
+
+## Setup Kubernetes Client CLI
+* Follow the instructions [here](https://github.com/fluxcapacitor/kubernetes.ml#install-kubernetes-client).
+
+## Support
+* Email **help@fluxcapacitor.com** for Support!
