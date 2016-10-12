@@ -18,9 +18,14 @@
 ./deploy.sh
 ```
 
-## Get Host/IP for Apache2 Httpd
+## Get Apache2 Host/IP
 ```
 kubectl get svc -w
+```
+
+## Navigate Browser to Apache2 Host/IP 
+```
+http://<apache2-host-ip>
 ```
 
 ## Support
