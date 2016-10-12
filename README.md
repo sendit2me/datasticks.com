@@ -1,6 +1,6 @@
 ![Datasticks Logo](https://s3-us-west-2.amazonaws.com/advancedspark.com/img/datasticks-logo.png)
 
-### The Lightweight, 100% Open Source Alternative for Advanced Analytics and Machine Learning
+### The Lightweight, 100% Open Source Alternative for Streaming Analytics and Machine Learning
 
 ## Live Demo
 * Click [here](http://datasticks.com) for a live, non-secure demo.  
