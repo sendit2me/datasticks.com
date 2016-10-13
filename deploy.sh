@@ -17,10 +17,6 @@ echo '...JupyterHub...'
 kubectl create -f jupyterhub.ml/jupyterhub-rc.yaml
 kubectl create -f jupyterhub.ml/jupyterhub-svc.yaml
 
-echo '...Apache...'
-kubectl create -f apache.ml/apache-rc.yaml
-kubectl create -f apache.ml/apache-svc.yaml
-
 echo '...MySql...'
 kubectl create -f sql.ml/mysql-rc.yaml
 kubectl create -f sql.ml/mysql-svc.yaml
@@ -48,3 +44,7 @@ kubectl create -f serve.ml/jvm-svc.yaml
 echo '...Prediction Serving Layer (TensorFlow-based)...'
 kubectl create -f serve.ml/tensorflow-rc.yaml
 kubectl create -f serve.ml/tensorflow-svc.yaml
+
+echo '...Apache...'
+kubectl create -f apache.ml/apache-rc.yaml
+kubectl create -f apache.ml/apache-svc.yaml
