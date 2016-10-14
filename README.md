@@ -7,6 +7,9 @@
 
 **Note:  Do not load any sensitive data into this environment!**
 
+## Related Projects
+* Click [here](https://github.com/fluxcapacitor/pipeline) for a related project used for workshops
+
 ## Setup Kubernetes Cluster
 * Follow the instructions [here](https://github.com/fluxcapacitor/kubernetes.ml#setup-a-new-kubernetes-cluster).
 
