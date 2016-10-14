@@ -1,5 +1,5 @@
-echo '...Kubernetes Admin UI (Weave Scope)...'
-kubectl create -f dashboard.ml/weavescope/weavescope.yaml
+echo '...Dashboard...'
+kubectl create -f dashboard.ml/kubernetes/weavescope.yaml
 
 echo '...Spark Master...'
 kubectl create -f apachespark.ml/spark-master-rc.yaml
@@ -37,11 +37,15 @@ echo '...Dynomite + Redis...'
 kubectl create -f dynomite.ml/dynomite-rc.yaml
 kubectl create -f dynomite.ml/dynomite-svc.yaml
 
-echo '...Prediction Serving Layer (JVM-based)...'
-kubectl create -f serve.ml/jvm-rc.yaml
-kubectl create -f serve.ml/jvm-svc.yaml
+echo '...NetflixOSS Core Components...'
+kubectl create -f serve.ml/netflix-rc.yaml
+kubectl create -f serve.ml/netflix-svc.yaml
 
-echo '...Prediction Serving Layer (TensorFlow-based)...'
+echo '...NetflixOSS-based Prediction Services...'
+kubectl create -f serve.ml/netflix-rc.yaml
+kubectl create -f serve.ml/netflix-svc.yaml
+
+echo '...TensorFlow Serving-based Prediction Services...'
 kubectl create -f serve.ml/tensorflow-rc.yaml
 kubectl create -f serve.ml/tensorflow-svc.yaml
 
