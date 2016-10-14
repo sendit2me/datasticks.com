@@ -1,12 +1,6 @@
 [submodule "dashboard.ml"]
 	path = dashboard.ml
 	url = https://github.com/fluxcapacitor/dashboard.ml.git
-[submodule "master.ml"]
-	path = master.ml
-	url = https://github.com/fluxcapacitor/master.ml.git
-[submodule "worker.ml"]
-	path = worker.ml
-	url = https://github.com/fluxcapacitor/worker.ml.git
 [submodule "zeppelin.ml"]
 	path = zeppelin.ml
 	url = https://github.com/fluxcapacitor/zeppelin.ml.git
@@ -37,3 +31,6 @@
 [submodule "demos.ml"]
 	path = demos.ml
 	url = https://github.com/fluxcapacitor/demos.ml
+[submodule "apachespark.ml"]
+	path = apachespark.ml
+	url = https://github.com/fluxcapacitor/apachespark.ml
