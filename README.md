@@ -16,6 +16,11 @@
 ## Setup Kubernetes Client CLI
 * Follow the instructions [here](https://github.com/fluxcapacitor/kubernetes.ml#install-kubernetes-client).
 
+## Clone this Repo including Submodules
+```
+git clone --recursive https://github.com/fluxcapacitor/datasticks.com
+```
+
 ## Deploy to Kubernetes Cluster
 ```
 ./datasticks-up.sh
