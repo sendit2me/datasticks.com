@@ -42,8 +42,8 @@ kubectl create -f serve.ml/netflix-rc.yaml
 kubectl create -f serve.ml/netflix-svc.yaml
 
 echo '...NetflixOSS-based Prediction Services...'
-kubectl create -f serve.ml/netflix-rc.yaml
-kubectl create -f serve.ml/netflix-svc.yaml
+kubectl create -f serve.ml/prediction-rc.yaml
+kubectl create -f serve.ml/prediction-svc.yaml
 
 echo '...TensorFlow Serving-based Prediction Services...'
 kubectl create -f serve.ml/tensorflow-rc.yaml
