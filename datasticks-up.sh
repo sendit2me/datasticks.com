@@ -2,12 +2,12 @@ echo '...Kubernetes Admin UI (Weave Scope)...'
 kubectl create -f dashboard.ml/weavescope/weavescope.yaml
 
 echo '...Spark Master...'
-kubectl create -f master.ml/spark/2.0.1/master-spark-rc.yaml
-kubectl create -f master.ml/spark/2.0.1/master-spark-svc.yaml
+kubectl create -f apachespark.ml/spark-master-rc.yaml
+kubectl create -f apachespark.ml/spark-master-svc.yaml
 
 echo '...Spark Worker...'
-kubectl create -f worker.ml/spark/2.0.1/worker-spark-rc.yaml
-kubectl create -f worker.ml/spark/2.0.1/worker-spark-svc.yaml
+kubectl create -f apachespark.ml/spark-worker-rc.yaml
+kubectl create -f apachespark.ml/spark-worker-svc.yaml
 
 echo '...Zeppelin...'
 kubectl create -f zeppelin.ml/zeppelin-rc.yaml
