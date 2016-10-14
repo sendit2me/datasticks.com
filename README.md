@@ -18,7 +18,7 @@
 
 ## Deploy to Kubernetes Cluster
 ```
-./deploy.sh
+./datasticks-up.sh
 ```
 
 ## Get Apache2 Host/IP
