@@ -28,9 +28,6 @@
 [submodule "dynomite.ml"]
 	path = dynomite.ml
 	url = https://github.com/fluxcapacitor/dynomite.ml.git
-[submodule "demos.ml"]
-	path = demos.ml
-	url = https://github.com/fluxcapacitor/demos.ml
 [submodule "apachespark.ml"]
 	path = apachespark.ml
 	url = https://github.com/fluxcapacitor/apachespark.ml.git
