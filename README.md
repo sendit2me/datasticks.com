@@ -3,7 +3,7 @@
 ### The Lightweight, 100% Open Source Alternative for Streaming Analytics, ML, and AI
 
 ## Live Demo
-* Click [here](http://datasticks.com) for a live, non-secure demo.  
+* Click [here](http://datasticks.com) for a live demo.  
 
 **Note:  Do not load any sensitive data into this environment!**
 
