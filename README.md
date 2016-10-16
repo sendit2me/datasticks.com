@@ -20,24 +20,33 @@
 ```
 git clone --recursive https://github.com/fluxcapacitor/datasticks.com
 ```
+
+## Change into `datasticks.com` directory
+```
+cd datasticks.com
+```
+
 ## Pull Latest Tips of Submodules
 ```
 git submodule update --recursive --remote
 ```
 
-## Deploy to Kubernetes Cluster
+## Deploy Datasticks to Kubernetes Cluster
 ```
 ./datasticks-up.sh
 ```
 
-## Get Apache2 Host/IP
+## Get all Service Host/IPs
 ```
 kubectl get svc -w
 ```
 
-## Navigate Browser to Apache2 Host/IP 
+## (Optional) Setup Friendly CNAMEs in DNS Pointing to Service Host/IPs above
+* ie. AWS Route53 REST API, GoDaddy API, etc
+
+## Navigate Browser to Apache Host/IP from Above
 ```
-http://<apache2-host-ip>
+http://<apache-host-ip>
 ```
 
 ## Advanced Features and Demos
