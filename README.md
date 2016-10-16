@@ -20,6 +20,10 @@
 ```
 git clone --recursive https://github.com/fluxcapacitor/datasticks.com
 ```
+## Pull Latest Tips of Submodules
+```
+git submodule update --recursive --remote
+```
 
 ## Deploy to Kubernetes Cluster
 ```
