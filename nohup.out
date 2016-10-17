@@ -1,0 +1,5 @@
+From https://github.com/fluxcapacitor/dynomite.ml
+   7fa2ec5..648c27e  master     -> origin/master
+Submodule path 'dynomite.ml': checked out '648c27e15f7f2c4230f817422c1876887a0dbf53'
+fatal: unable to access 'https://github.com/fluxcapacitor/jupyterhub.ml.git/': Could not resolve host: github.com
+Unable to fetch in submodule path 'jupyterhub.ml'
