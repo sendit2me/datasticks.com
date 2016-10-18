@@ -10,9 +10,9 @@ echo '...ZooKeeper...'
 kubectl create -f zookeeper.ml/zookeeper-rc.yaml
 kubectl create -f zookeeper.ml/zookeeper-svc.yaml
 
-echo '...Dynomite + Redis...'
-kubectl create -f dynomite.ml/dynomite-rc.yaml
-kubectl create -f dynomite.ml/dynomite-svc.yaml
+echo '...Redis...'
+kubectl create -f keyvalue.ml/redis-rc.yaml
+kubectl create -f keyvalue.ml/redis-svc.yaml
 
 echo '...Spark Master...'
 kubectl create -f apachespark.ml/spark-master-rc.yaml
@@ -50,5 +50,5 @@ kubectl create -f serve.ml/tensorflow-rc.yaml
 kubectl create -f serve.ml/tensorflow-svc.yaml
 
 echo '...Apache...'
-kubectl create -f apache.ml/apache-rc.yaml
-kubectl create -f apache.ml/apache-svc.yaml
+kubectl create -f web.ml/apache-rc.yaml
+kubectl create -f web.ml/apache-svc.yaml
