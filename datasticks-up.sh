@@ -1,3 +1,7 @@
+echo '...NetflixOSS Core Components...'
+kubectl create -f serve.ml/netflix-rc.yaml
+kubectl create -f serve.ml/netflix-svc.yaml
+
 '...MySql...'
 kubectl create -f sql.ml/mysql-rc.yaml
 kubectl create -f sql.ml/mysql-svc.yaml
@@ -34,9 +38,8 @@ echo '...Kafka...'
 kubectl create -f stream.ml/kafka-rc.yaml
 kubectl create -f stream.ml/kafka-svc.yaml
 
-echo '...NetflixOSS Core Components...'
-kubectl create -f serve.ml/netflix-rc.yaml
-kubectl create -f serve.ml/netflix-svc.yaml
+echo '...Dashboard...'
+kubectl create -f dashboard.ml/kubernetes/weavescope.yaml
 
 echo '...NetflixOSS-based Prediction Services...'
 kubectl create -f serve.ml/prediction-rc.yaml
@@ -45,9 +48,6 @@ kubectl create -f serve.ml/prediction-svc.yaml
 echo '...TensorFlow Serving-based Prediction Services...'
 kubectl create -f serve.ml/tensorflow-rc.yaml
 kubectl create -f serve.ml/tensorflow-svc.yaml
-
-echo '...Dashboard...'
-kubectl create -f dashboard.ml/kubernetes/weavescope.yaml
 
 echo '...Apache...'
 kubectl create -f apache.ml/apache-rc.yaml

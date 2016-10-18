@@ -21,13 +21,10 @@
 git clone --recursive https://github.com/fluxcapacitor/datasticks.com
 ```
 
-## Change into `datasticks.com` directory
-```
-cd datasticks.com
-```
-
 ## Pull Latest Tips of Submodules
 ```
+cd datasticks.com
+
 git submodule update --recursive --remote
 ```
 
