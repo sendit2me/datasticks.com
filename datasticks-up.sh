@@ -49,6 +49,10 @@ echo '...TensorFlow Serving-based Prediction Services...'
 kubectl create -f serve.ml/tensorflow-rc.yaml
 kubectl create -f serve.ml/tensorflow-svc.yaml
 
+echo '...Cassandra...'
+kubectl create -f cassandra.ml/cassandra-rc.yaml
+kubectl create -f cassandra.ml/cassandra-svc.yaml
+
 echo '...Apache...'
 kubectl create -f web.ml/apache-rc.yaml
 kubectl create -f web.ml/apache-svc.yaml

@@ -38,5 +38,8 @@ kubectl delete rc prediction
 echo '...TensorFlow Serving-based Prediction Services...'
 kubectl delete rc tensorflow
 
+echo '...Cassandra...'
+kubectl delete rc cassandra
+
 echo '...Apache...'
 kubectl delete rc apache
