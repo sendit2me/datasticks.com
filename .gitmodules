@@ -34,3 +34,6 @@
 [submodule "keyvalue.ml"]
 	path = keyvalue.ml
 	url = https://github.com/fluxcapacitor/keyvalue.ml.git
+[submodule "cassandra.ml"]
+	path = cassandra.ml
+	url = https://github.com/fluxcapacitor/cassandra.ml.git
