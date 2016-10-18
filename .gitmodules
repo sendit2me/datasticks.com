@@ -7,9 +7,6 @@
 [submodule "jupyterhub.ml"]
 	path = jupyterhub.ml
 	url = https://github.com/fluxcapacitor/jupyterhub.ml.git
-[submodule "apache.ml"]
-	path = apache.ml
-	url = https://github.com/fluxcapacitor/apache.ml.git
 [submodule "scheduler.ml"]
 	path = scheduler.ml
 	url = https://github.com/fluxcapacitor/scheduler.ml.git
@@ -25,12 +22,15 @@
 [submodule "serve.ml"]
 	path = serve.ml
 	url = https://github.com/fluxcapacitor/serve.ml.git
-[submodule "dynomite.ml"]
-	path = dynomite.ml
-	url = https://github.com/fluxcapacitor/dynomite.ml.git
 [submodule "apachespark.ml"]
 	path = apachespark.ml
 	url = https://github.com/fluxcapacitor/apachespark.ml.git
 [submodule "source.ml"]
 	path = source.ml
 	url = https://github.com/fluxcapacitor/source.ml.git
+[submodule "web.ml"]
+	path = web.ml
+	url = https://github.com/fluxcapacitor/web.ml.git
+[submodule "keyvalue.ml"]
+	path = keyvalue.ml
+	url = https://github.com/fluxcapacitor/keyvalue.ml.git
