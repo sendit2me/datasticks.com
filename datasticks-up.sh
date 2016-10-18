@@ -2,7 +2,7 @@ echo '...NetflixOSS Core Components...'
 kubectl create -f serve.ml/netflix-rc.yaml
 kubectl create -f serve.ml/netflix-svc.yaml
 
-'...MySql...'
+echo '...MySql...'
 kubectl create -f sql.ml/mysql-rc.yaml
 kubectl create -f sql.ml/mysql-svc.yaml
 

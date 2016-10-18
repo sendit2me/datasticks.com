@@ -1,7 +1,7 @@
 echo '...NetflixOSS Core Components...'
 kubectl delete rc netflix
 
-'...MySql...'
+echo '...MySql...'
 kubectl delete rc mysql-master
 
 echo '...ZooKeeper...'
