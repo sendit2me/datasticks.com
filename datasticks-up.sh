@@ -51,8 +51,8 @@ kubectl create -f presto.ml/airpal-rc.yaml
 kubectl create -f presto.ml/airpal-svc.yaml
 
 echo '...Kafka...'
-kubectl create -f stream.ml/kafka-rc.yaml
-kubectl create -f stream.ml/kafka-svc.yaml
+kubectl create -f stream.ml/kafka-0.10-rc.yaml
+kubectl create -f stream.ml/kafka-0.10-svc.yaml
 
 echo '...Dashboard...'
 kubectl create -f dashboard.ml/kubernetes/weavescope.yaml
