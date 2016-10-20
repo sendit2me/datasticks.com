@@ -16,6 +16,9 @@ kubectl delete rc spark-master-2-0-1
 echo '...Spark Worker...'
 kubectl delete rc spark-worker-2-0-1
 
+echo '...Hive Metastore...'
+kubectl delete rc metastore
+
 echo '...Zeppelin...'
 kubectl delete rc zeppelin-master
 
@@ -24,6 +27,15 @@ kubectl delete rc jupyterhub-master
 
 echo '...Airflow Scheduler...'
 kubectl delete rc airflow
+
+echo '...Presto Master...'
+kubectl delete rc presto-master
+
+echo '...Presto Worker...'
+kubectl delete rc presto-worker
+
+echo '...Presto AirPal...'
+kubectl delete rc airpal
 
 echo '...Kafka...'
 kubectl delete rc kafka
