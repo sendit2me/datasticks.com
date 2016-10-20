@@ -37,3 +37,9 @@
 [submodule "cassandra.ml"]
 	path = cassandra.ml
 	url = https://github.com/fluxcapacitor/cassandra.ml.git
+[submodule "presto.ml"]
+	path = presto.ml
+	url = https://github.com/fluxcapacitor/presto.ml.git
+[submodule "metastore.ml"]
+	path = metastore.ml
+	url = https://github.com/fluxcapacitor/metastore.ml.git
