@@ -38,7 +38,7 @@ echo '...Presto AirPal...'
 kubectl delete rc airpal
 
 echo '...Kafka...'
-kubectl delete rc kafka
+kubectl delete rc kafka-0-10
 
 echo '...Dashboard...'
 kubectl delete rc weavescope-app
